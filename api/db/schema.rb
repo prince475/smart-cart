@@ -12,20 +12,20 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_05_26_070638) do
   create_table "products", force: :cascade do |t|
-    t.string "image"
-    t.string "description"
-    t.integer "unit_price"
-    t.integer "quantity"
-    t.integer "total"
+    t.string "image", null: false
+    t.string "description", null: false
+    t.integer "unit_price", null: false
+    t.integer "quantity", null: false
+    t.integer "total", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-    t.integer "phone_number"
-    t.string "password_digest"
+    t.string "name", null: false
+    t.string "email", null: false
+    t.integer "phone_number", null: false
+    t.string "password_digest", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
