@@ -256,3 +256,748 @@ Processing by UsersController#create as */*
 Completed 422 Unprocessable Entity in 299ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 5514)
 
 
+Started POST "/login" for 127.0.0.1 at 2023-05-26 12:25:31 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f903193b340>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f903193b340>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 202 Accepted in 276ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 3302)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:27:35 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:16: syntax error, unexpected `rescue', expecting `end'
+        rescue ActiveRecord::RecordInvalid ...
+        ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:16: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+):
+  
+app/controllers/products_controller.rb:16: syntax error, unexpected `rescue', expecting `end'
+app/controllers/products_controller.rb:16: syntax error, unexpected =>
+app/controllers/products_controller.rb:16: syntax error, unexpected `rescue', expecting `end'
+app/controllers/products_controller.rb:16: syntax error, unexpected =>
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:28:34 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:29:56 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: else without rescue is useless
+        else
+        ^~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+):
+  
+app/controllers/products_controller.rb:17: else without rescue is useless
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:17: else without rescue is useless
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:30:22 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:30:49 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+):
+  
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:31:06 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:29: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:31:37 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:18: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+):
+  
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+app/controllers/products_controller.rb:18: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:18: syntax error, unexpected =>
+Started POST "/product" for 127.0.0.1 at 2023-05-26 12:32:20 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/products_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:27:43 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 9.5ms | Allocations: 249)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:27:57 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f90171f5e10>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f90171f5e10>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 202 Accepted in 294ms (Views: 0.7ms | ActiveRecord: 1.0ms | Allocations: 3447)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:28:18 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 228)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:28:45 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 228)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:35:59 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:31: syntax error, unexpected `end', expecting end-of-input
+    end
+    ^~~
+):
+  
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:31: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:31: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:37:30 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:36: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:36: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:36: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:37:56 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 249)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:38:26 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f90268d1518>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f90268d1518>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 202 Accepted in 285ms (Views: 0.6ms | ActiveRecord: 0.5ms | Allocations: 3065)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:38:43 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 228)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:42:44 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f9030b6bda0>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007f9030b6bda0>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 202 Accepted in 288ms (Views: 0.5ms | ActiveRecord: 1.4ms | Allocations: 3726)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:43:05 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms | Allocations: 2074)
+
+
+  
+NameError (undefined local variable or method `decode_token' for #<ProductsController:0x00000000044d18>
+Did you mean?  decoded_token
+               encode_token):
+  
+app/controllers/application_controller.rb:30:in `current_user'
+app/controllers/application_controller.rb:36:in `logged_in?'
+app/controllers/application_controller.rb:40:in `authorized'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:44:28 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fcc9a79c098>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.8ms | Allocations: 54422)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'user_id' for Product.):
+  
+app/controllers/products_controller.rb:14:in `create'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20230526070638)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "products"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230526070638"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20230526070638)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image" varchar NOT NULL, "description" varchar NOT NULL, "unit_price" integer NOT NULL, "quantity" integer NOT NULL, "total" integer NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_dee2631783"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_products_on_user_id" ON "products" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230526070638"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:47:43 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fd5cc228680>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fd5cc228680>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 202 Accepted in 297ms (Views: 14.0ms | ActiveRecord: 0.7ms | Allocations: 39979)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:48:52 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fd5bc306d00>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fd5bc306d00>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (6.77ms)
+Completed 500 Internal Server Error in 289ms (ActiveRecord: 1.4ms | Allocations: 7079)
+
+
+  
+TypeError ({:except=>[:created_at, :updated_at]} is not a symbol nor a string):
+  
+app/controllers/auths_controller.rb:10:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:50:07 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe8ce3eba70>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe8ce3eba70>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (3.6ms)
+Completed 202 Accepted in 298ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 41491)
+
+
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:50:53 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e444db8>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e444db8>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 1.0ms | Allocations: 4888)
+
+
+  
+NoMethodError (undefined method `call' for UserSerializer:Class):
+  
+app/controllers/auths_controller.rb:10:in `create'
+Started POST "/login" for 127.0.0.1 at 2023-05-26 18:51:31 +0300
+Processing by AuthsController#create as */*
+  Parameters: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e526b28>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "nyokabi@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/auths_controller.rb:6:in `create'
+[31mUnpermitted parameter: :auth. Context: { controller: AuthsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e526b28>, params: {"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]", "controller"=>"auths", "action"=>"create", "auth"=>{"email"=>"nyokabi@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.14ms)
+Completed 202 Accepted in 271ms (Views: 1.5ms | ActiveRecord: 0.7ms | Allocations: 4734)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:51:59 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88d844a90>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (1.2ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 15:51:59.593918"], ["updated_at", "2023-05-26 15:51:59.593918"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.3ms | Allocations: 23677)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:52:56 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88cd64198>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 15:52:56.945856"], ["updated_at", "2023-05-26 15:52:56.945856"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.6ms | Allocations: 8982)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:54:41 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88de46a60>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 15:54:41.214642"], ["updated_at", "2023-05-26 15:54:41.214642"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.5ms | Allocations: 9009)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 18:55:29 +0300
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+            rescue ActiveRecord::RecordInvalid ...
+            ^~~~~~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:17: syntax error, unexpected =>
+... ActiveRecord::RecordInvalid => invalid
+...                             ^~
+/Users/nyokabikamau/Development/projects/smart-cart/api/app/controllers/products_controller.rb:38: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:38: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:17: syntax error, unexpected `rescue'
+app/controllers/products_controller.rb:17: syntax error, unexpected =>
+app/controllers/products_controller.rb:38: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:06:10 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88dd8e078>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 16:06:10.775749"], ["updated_at", "2023-05-26 16:06:10.775749"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 8.4ms | Allocations: 8975)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:06:45 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe8a8034bc8>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (0.6ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 16:06:45.449103"], ["updated_at", "2023-05-26 16:06:45.449103"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 1.1ms | Allocations: 4362)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:09:10 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e584598>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 422 Unprocessable Entity in 21ms (ActiveRecord: 1.7ms | Allocations: 9081)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Total can't be blank):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:09:31 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe8abee39a0>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>60, "quantity"=>3, "total"=>180}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.19ms)
+Completed 201 Created in 16ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 8420)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:11:34 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88e254620>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 201 Created in 20ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 3579)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:12:22 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe88da19988>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 201 Created in 18ms (Views: 3.3ms | ActiveRecord: 1.2ms | Allocations: 8465)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:12:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fb187d40388>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 201 Created in 40ms (Views: 5.1ms | ActiveRecord: 0.9ms | Allocations: 60347)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:22:55 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fb1874cba68>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (3.92ms)
+Completed 201 Created in 33ms (Views: 5.9ms | ActiveRecord: 3.7ms | Allocations: 3636)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:24:26 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameters: :total, :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee17687b78>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.34ms)
+Completed 201 Created in 42ms (Views: 7.0ms | ActiveRecord: 0.8ms | Allocations: 60348)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:25:40 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee00ebd638>, params: {"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image1.com", "description"=>"soda", "unit_price"=>"60", "quantity"=>"3", "total"=>"180"}} }[0m
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (1.4ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image1.com"], ["description", "soda"], ["unit_price", 60], ["quantity", 3], ["total", 180], ["user_id", 1], ["created_at", "2023-05-26 16:25:40.164582"], ["updated_at", "2023-05-26 16:25:40.164582"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 23ms (Views: 3.0ms | ActiveRecord: 3.5ms | Allocations: 10060)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:26:19 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee00367630>, params: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (0.3ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image2.com"], ["description", "bread"], ["unit_price", 40], ["quantity", 2], ["total", nil], ["user_id", 1], ["created_at", "2023-05-26 16:26:19.578199"], ["updated_at", "2023-05-26 16:26:19.578199"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.5ms | Allocations: 9009)
+
+
+  
+ActiveRecord::NotNullViolation (SQLite3::ConstraintException: NOT NULL constraint failed: products.total):
+  
+app/controllers/products_controller.rb:14:in `create'
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:33:14 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee00495e30>, params: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.26ms)
+Completed 201 Created in 14ms (Views: 2.9ms | ActiveRecord: 0.8ms | Allocations: 7973)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:34:41 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee176b63b0>, params: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2", "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>"40", "quantity"=>"2"}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (1.52ms)
+Completed 201 Created in 20ms (Views: 5.6ms | ActiveRecord: 1.0ms | Allocations: 8450)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:36:16 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2, "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fee00c6fac0>, params: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 201 Created in 20ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 3606)
+
+
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:39:17 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/nyokabikamau/Development/projects/smart-cart/api/app/models/product.rb:19: syntax error, unexpected `end', expecting end-of-input):
+  
+app/models/product.rb:19: syntax error, unexpected `end', expecting end-of-input
+app/models/product.rb:19: syntax error, unexpected `end', expecting end-of-input
+Started POST "/product" for 127.0.0.1 at 2023-05-26 19:39:40 +0300
+Processing by ProductsController#create as */*
+  Parameters: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2, "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[31mUnpermitted parameter: :product. Context: { controller: ProductsController, action: create, request: #<ActionDispatch::Request:0x00007fe5ec3d3c20>, params: {"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2, "controller"=>"products", "action"=>"create", "product"=>{"image"=>"image2.com", "description"=>"bread", "unit_price"=>40, "quantity"=>2}} }[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mProduct Create (1.0ms)[0m  [1m[32mINSERT INTO "products" ("image", "description", "unit_price", "quantity", "total", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["image", "image2.com"], ["description", "bread"], ["unit_price", 40], ["quantity", 2], ["total", 80], ["user_id", 1], ["created_at", "2023-05-26 16:39:40.751596"], ["updated_at", "2023-05-26 16:39:40.751596"]]
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/products_controller.rb:14:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:31:in `current_user'
+[active_model_serializers] Rendered ProductSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 201 Created in 71ms (Views: 6.3ms | ActiveRecord: 2.9ms | Allocations: 60713)
+
+

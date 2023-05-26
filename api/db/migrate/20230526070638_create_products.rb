@@ -6,6 +6,7 @@ class CreateProducts < ActiveRecord::Migration[7.0]
       t.integer :unit_price, null: false
       t.integer :quantity, null: false
       t.integer :total, null: false
+      t.belongs_to :user, null: false, foreign_key: true
 
       t.timestamps
     end

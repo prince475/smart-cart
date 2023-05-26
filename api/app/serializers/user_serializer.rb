@@ -1,3 +1,3 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes except: [:created_at, :updated_at]
+  attributes :id, :name, :email, :phone_number
 end

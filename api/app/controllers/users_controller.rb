@@ -3,9 +3,9 @@ class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create]
 
     def index
-        user = User.all
+        @user = User.all
         if current_user
-            render json: user, status: :ok
+            render json: UserSerializer.new(@user), status: :ok
         else
             render json: { error: "Not authorized" }, status: :unathorized
         end
